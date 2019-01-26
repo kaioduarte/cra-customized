@@ -1,4 +1,4 @@
-# CRA Customized
+# CRA Customized - Redux
 
 Just some adjustments to the default CRA setup :)
 
@@ -8,6 +8,7 @@ Just some adjustments to the default CRA setup :)
 - Storybook
 - Standard.js
 - Hot loader
+- Redux workflow
 
 ## Scripts
 
