@@ -7,7 +7,7 @@ Just some adjustments to the default CRA setup :)
 - Gulp
 - Storybook
 - Standard.js
-- Hot loader
+- Hot reload
 
 ## Scripts
 
