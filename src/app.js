@@ -1,7 +1,7 @@
 import React from 'react'
 
 const App = () => (
-  <div>App works!</div>
+  <h1>CRA + rescripts works!</h1>
 )
 
 export default App

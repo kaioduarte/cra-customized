@@ -4,20 +4,19 @@ Just some adjustments to the default CRA setup :)
 
 ## Tweaks
 
-- Gulp
 - Storybook
 - Standard.js
-- Hot reload
+- Alias
+- Webpack Bundle Analyzer
 
 ## Scripts
 
-- yarn start
+- yarn dev
 - yarn test
-- yarn test:watch
-- yarn lint
+- yarn test:coverage
 - yarn lint:fix
-- yarn lint:watch
 - yarn build
+- yarn build:stats
+- yarn analyze
 - yarn storybook
 - yarn build-storybook
-- yarn eject

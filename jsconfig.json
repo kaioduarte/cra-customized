@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2015",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "src/*": ["./src/*"],
+      "components/*": ["./src/components/*"],
+      "config/*": ["./src/config/*"],
+      "reducers/*": ["./src/redux-flow/reducers/*"],
+      "utils/*": ["./src/utils/*"]
+    },
+  },
+  "exclude": ["build", "node_modules", "coverage"]
+}
