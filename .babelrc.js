@@ -9,6 +9,7 @@ const alias = {
   src: paths.src,
   components: join(paths.src, 'components'),
   config: join(paths.src, 'config'),
+  pages: join(paths.src, 'pages'),
   reducers: join(paths.src, 'redux-flow', 'reducers'),
   utils: join(paths.src, 'utils')
 }
