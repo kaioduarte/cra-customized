@@ -6,7 +6,7 @@ Just some adjustments to the default CRA setup :)
 
 - Storybook
 - Standard.js
-- Alias
+- Alias + VS Code intellisense support (check `jsconfig.json`)
 - Webpack Bundle Analyzer
 
 ## Scripts
