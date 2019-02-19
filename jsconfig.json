@@ -8,6 +8,7 @@
       "src/*": ["./src/*"],
       "components/*": ["./src/components/*"],
       "config/*": ["./src/config/*"],
+      "pages/*": ["./src/pages/*"],
       "reducers/*": ["./src/redux-flow/reducers/*"],
       "utils/*": ["./src/utils/*"]
     },
