@@ -4,6 +4,7 @@ Just some adjustments to the default CRA setup :)
 
 ## Tweaks
 
+- HMR support
 - Storybook
 - Standard.js
 - Alias + VS Code intellisense support (check `jsconfig.json`)
