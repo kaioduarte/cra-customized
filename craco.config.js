@@ -1,8 +1,10 @@
 const { join } = require('path')
+const { when } = require('@craco/craco')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const paths = {
   root: __dirname,
-  src: join(__dirname, 'src'),
+  src: join(__dirname, 'src')
 }
 
 const alias = {
@@ -15,13 +17,13 @@ const alias = {
 }
 
 module.exports = {
-  presets: ['react-app'],
-  plugins: [
-    'react-require', [
-      'module-resolver', {
-        root: paths.root,
-        alias,
-      },
-    ],
-  ]
+  webpack: {
+    alias,
+    plugins: [
+      ...when(
+        Boolean(process.env.ANALYZE),
+        () => [new BundleAnalyzerPlugin()], []
+      )
+    ]
+  }
 }
