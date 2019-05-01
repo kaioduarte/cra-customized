@@ -17,6 +17,18 @@ const alias = {
 }
 
 module.exports = {
+  babel: {
+    presets: ['react-app']
+  },
+  eslint: {
+    configure: {
+      extends: [
+        'react-app',
+        'standard',
+        'standard-react'
+      ]
+    }
+  },
   webpack: {
     alias,
     plugins: [
