@@ -17,7 +17,6 @@ Just some adjustments to the default CRA setup :)
 - yarn test:coverage
 - yarn lint:fix
 - yarn build
-- yarn build:stats
 - yarn analyze
 - yarn storybook
 - yarn build-storybook
