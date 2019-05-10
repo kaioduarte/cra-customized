@@ -4,6 +4,7 @@ Just some adjustments to the default CRA setup :)
 
 ## Tweaks
 
+- Heroku setup
 - HMR support
 - Storybook
 - Standard.js
@@ -20,3 +21,4 @@ Just some adjustments to the default CRA setup :)
 - yarn analyze
 - yarn storybook
 - yarn build-storybook
+- yarn start
