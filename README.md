@@ -6,6 +6,7 @@ Just some adjustments to the default CRA setup :)
 
 - Heroku setup
 - HMR support
+- Preact :fire:
 - Storybook
 - Standard.js
 - Alias + VS Code intellisense support (check `jsconfig.json`)

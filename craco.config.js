@@ -7,6 +7,16 @@ const paths = {
   src: join(__dirname, 'src')
 }
 
+const override = {
+  development: {
+    'react-dom': '@hot-loader/react-dom'
+  },
+  production: {
+    react: 'preact/compat',
+    'react-dom': 'preact/compat'
+  }
+}
+
 const alias = {
   src: paths.src,
   components: join(paths.src, 'components'),
@@ -14,9 +24,7 @@ const alias = {
   pages: join(paths.src, 'pages'),
   reducers: join(paths.src, 'redux-flow', 'reducers'),
   utils: join(paths.src, 'utils'),
-  'react-dom': process.env.NODE_ENV === 'development'
-    ? '@hot-loader/react-dom'
-    : 'react-dom'
+  ...override[process.env.NODE_ENV]
 }
 
 module.exports = {
