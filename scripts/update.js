@@ -14,5 +14,5 @@ const addDev = (args) => {
 }
 
 add(dependencies).on('close', () => {
-  addDev(devDependencies).on('close', (code) => process.exit(code))
+  addDev(devDependencies.concat('preact@next')).on('close', (code) => process.exit(code))
 })
