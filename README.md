@@ -11,6 +11,7 @@ Just some adjustments to the default CRA setup :)
 - Standard.js
 - Alias + VS Code intellisense support (check `jsconfig.json`)
 - Webpack Bundle Analyzer
+- PurgeCSS :fire:
 
 ## Scripts
 

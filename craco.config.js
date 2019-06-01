@@ -1,10 +1,13 @@
+const glob = require('glob-all')
 const { join } = require('path')
 const { when } = require('@craco/craco')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const paths = {
   root: __dirname,
-  src: join(__dirname, 'src')
+  src: join(__dirname, 'src'),
+  public: join(__dirname, 'public')
 }
 
 const override = {
@@ -47,6 +50,17 @@ module.exports = {
       ...when(
         Boolean(process.env.ANALYZE),
         () => [new BundleAnalyzerPlugin()], []
+      ),
+      ...when(
+        process.env.NODE_ENV === 'production',
+        () => [
+          new PurgecssPlugin({
+            paths: [
+              join(paths.public, 'index.html'),
+              ...glob.sync(`${paths.src}/**`, { nodir: true })
+            ]
+          })
+        ], []
       )
     ]
   }
